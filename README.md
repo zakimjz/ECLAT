@@ -95,7 +95,7 @@ In summary run
         eclat -i chess -e 1 -s 0.8 -d -l
 since chess is a dense set I have turned on -l option
 
->>>>>>>>>> ORIGINAL ECLAT/CLIQUE/MAX-ECLAT/MAX_CLIQUE >>>>>
+# ORIGINAL ECLAT/CLIQUE/MAX-ECLAT/MAX_CLIQUE #
  run 
         assocFB -e 1 -i XXX -s <MINSUP> -t 1000 for ECLAT
         assocFB -e 1 -i XXX -s <MINSUP> for MAXECLAT
