@@ -21,7 +21,8 @@ steps:
   Start with an ascii file (see chess.ascii example file in this directory)
   
 The format of the ascii/binary file should be
-<cid> <tid> <numitem> <item list>
+
+   <cid> <tid> <numitem> <item list>
   
 2) If ascii file, first convert to binary using makebin
         makebin chess.ascii chess.data
