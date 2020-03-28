@@ -6,7 +6,7 @@ HEADER  = Array.h Itemset.h Lists.h Eqclass.h HashTable.h \
 OBJS	= Itemset.o Array.o Eqclass.o HashTable.o \
 	Graph.o extl2.o partition.o memman.o GArray.o Util.o calcdb.o
 LIBS = -lm -lc
-TARGET  = eclat
+TARGET  = eclat assocFB
 
 default:	$(TARGET)
 

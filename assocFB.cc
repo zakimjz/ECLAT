@@ -1,6 +1,6 @@
 #include <errno.h>
-#include <iostream.h>
-#include <fstream.h>
+#include <iostream>
+#include <fstream>
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -30,6 +30,8 @@
 #include "extl2.h"
 #include "assoc.h"
 #include "calcdb.h"
+
+using namespace std;
 
 #define NONMAXFLG -2
 struct timeval tp;
