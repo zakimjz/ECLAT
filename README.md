@@ -1,6 +1,19 @@
-programs:
+Eclat uses the original vertical tidset approach for mining all frequent itemsets 
+[1997-eclat], combined with the diffsets improvement [2003-diffsets]. 
+
+* [1997-eclat] Mohammed J. Zaki, Srinivasan Parthasarathy, Mitsunori Ogihara, and Wei Li. New algorithms for fast discovery of association rules. In 3rd International Conference on Knowledge Discovery and Data Mining (KDD). August 1997.
+* [2003-diffsets] Mohammed J. Zaki and Karam Gouda. Fast vertical mining using Diffsets. In 9th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining. August 2003.
+
+For code also contains the maxeclat, clique, and maxclique approaches mentioned in 
+[2000-eclat:tkde] see assocFB.
+
+* [200-ecalt:tkde] Mohammed J. Zaki. Scalable algorithms for association mining. IEEE Transactions on Knowledge and Data Engineering, 12(3):372–390, May/Jun 2000. doi:10.1109/69.846291.
+
+
+##programs##
 
 eclat: eclat.cc is a clean version of only eclat code
+
 assocFB: assocFB has all algorithms (eclat, clique, maxeclat, maxclique)
 
 steps:
