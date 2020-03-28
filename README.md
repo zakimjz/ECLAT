@@ -14,6 +14,11 @@ eclat: eclat.cc is a clean version of only eclat code
 
 assocFB: assocFB has all algorithms (eclat, clique, maxeclat, maxclique)
 
+you will also need the tposedb utils from: https://github.com/zakimjz/tposedb
+
+for the IBM generator see https://github.com/zakimjz/IBMGenerator
+
+
 steps:
 
 1) Generate a data file using the IBM data generator program, gen. 
@@ -22,9 +27,10 @@ steps:
   
 The format of the ascii/binary file should be
 
-   <cid> <tid> <numitem> <item list>
+   \<cid\> \<tid\> \<numitem\> \<item list\>
   
 2) If ascii file, first convert to binary using makebin
+
         makebin chess.ascii chess.data
 
 Binary file MUST have .data extension   
@@ -36,10 +42,12 @@ Binary file MUST have .data extension
 
 
 Before running the rest you should now have the following files
+
         chess.data
         chess.conf
 
 4)  run: exttpose -i XXX -o XXX -l -s LMINSUP -a 0
+
         example: exttpose -i chess -o chess -l -s 0 -a 0
 
 note: this produces the files XXX.tpose, and XXX.idx
@@ -60,6 +68,7 @@ TPOSE DB_FILENAME X NUMITEMS TOTAL_TIME
 (see note one TOTAL_TIME below)               
 
 You should now have the following files:
+
         chess.data
         chess.conf
         chess.tpose
@@ -83,9 +92,9 @@ note that the summary of the run is stored in the summary.out
 file. The format of this file is as follows:
 
 ECLAT (other options) DB_FILENAME MINSUP NUMTRANS_IN_DB ACTUAL_SUPPORT
-      [ ITER_i |Ci| |Fi| timeForIter_i avg_tidset/diffset_size ] 
-      [TOT total_cands tot_freq tot_elapsed_time] 
-      NumberofIntersections XXX XXX XXX user_time sys_time
+[ ITER_i |Ci| |Fi| timeForIter_i avg_tidset/diffset_size ] 
+[TOT total_cands tot_freq tot_elapsed_time] 
+NumberofIntersections XXX XXX XXX user_time sys_time
 
 Note3: -e 1 option is a flag indicating eclat to compute the support
 of 2-itemsets from scratch. The number 1 says there is only one DB
@@ -99,12 +108,15 @@ chunks. Now you can run eclat with -e NUMPART option. You must do this
 if the DB is large otherwise the timings for eclat will be
 skewed. Generally, the more the partitions the better the running time
 for eclat. For example:
-        exttpose -i XXX -o XXX -l -a 0 -s LMINSUP -p 10
-        eclat -i XXX -s MINSUP -e 10
+
+      exttpose -i XXX -o XXX -l -a 0 -s LMINSUP -p 10
+      eclat -i XXX -s MINSUP -e 10
  
 
 In summary run
+
         eclat -i chess -e 1 -s 0.8 -d -l
+
 since chess is a dense set I have turned on -l option
 
 ## ORIGINAL ECLAT/CLIQUE/MAX-ECLAT/MAX_CLIQUE ##
