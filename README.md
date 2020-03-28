@@ -10,7 +10,7 @@ For code also contains the maxeclat, clique, and maxclique approaches mentioned 
 * [200-ecalt:tkde] Mohammed J. Zaki. Scalable algorithms for association mining. IEEE Transactions on Knowledge and Data Engineering, 12(3):372–390, May/Jun 2000. doi:10.1109/69.846291.
 
 
-#programs#
+### programs
 
 eclat: eclat.cc is a clean version of only eclat code
 
