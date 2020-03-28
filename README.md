@@ -1,7 +1,7 @@
 Eclat uses the original vertical tidset approach for mining all frequent itemsets 
 [1997-eclat], combined with the diffsets improvement [2003-diffsets]. 
 It also contains the maxeclat, clique, and maxclique approaches mentioned in 
-[2000-eclat:tkde] see assocFB.
+[2000-eclat:tkde].
 
 * [1997-eclat] Mohammed J. Zaki, Srinivasan Parthasarathy, Mitsunori Ogihara, and Wei Li. New algorithms for fast discovery of association rules. In 3rd International Conference on Knowledge Discovery and Data Mining (KDD). August 1997.
 * [2003-diffsets] Mohammed J. Zaki and Karam Gouda. Fast vertical mining using Diffsets. In 9th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining. August 2003.
